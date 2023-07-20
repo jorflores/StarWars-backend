@@ -98,7 +98,7 @@ app.delete("/api/delete/:id", async function (req, res) {
 
 app.put("/api/update", async function (req, res) {
   // const personaje = req.body;
-  await SW.updateOne({ _id: req.body.id }, req.body);
+  await SW.updateOne({ _id: req.body._id }, req.body);
 
   res.json("ok");
 });
