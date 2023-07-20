@@ -48,7 +48,7 @@ const characters = [
 
 // Routes
 app.get("/", function (req, res) {
-  res.send("Welcome to the Star Wars Page!");
+  res.send("Bienvenidos a la pagina de Star Wars Page");
 });
 
 // Displays all characters
