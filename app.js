@@ -97,10 +97,10 @@ app.delete("/api/delete/:id", async function (req, res) {
 });
 
 app.put("/api/update", async function (req, res) {
-  const personaje = req.body;
-  await SW.updateOne(personaje);
+  // const personaje = req.body;
+  await SW.updateOne({ _id: req.body.id }, req.body);
 
-  res.json(personaje);
+  res.json("ok"");
 });
 
 app.listen(process.env.PORT || 5000, function () {
